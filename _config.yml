@@ -12,3 +12,20 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+
+collections:
+  html:
+    output: true
+    permalink: /html/:path/
+  Java:
+    output: true
+    permalink: /Java/:path/    
+  Js:
+    output: true
+    permalink: /Js/:path/
+  Php:
+    output: true
+    permalink: /Php/:path/
+  Python:
+    output: true
+    permalink: /Python/:path/
