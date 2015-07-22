@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: pagepost
 title: Python Introduction
+collectionname: Python
 ---
 
 #Python Introduction

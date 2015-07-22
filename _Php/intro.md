@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: pagepost
 title: PHP Introduction
+collectionname: Php
 ---
 
 #PHP Introduction

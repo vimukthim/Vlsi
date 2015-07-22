@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: pagepost
 title: JS Introduction
+collectionname: Js
 ---
 
 #JS Introduction

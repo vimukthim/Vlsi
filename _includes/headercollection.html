@@ -1,0 +1,27 @@
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout__header-row ">
+                 <h3> <a  href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__header-row">
+            </div>
+            <div class="mdl-layout--large-screen-only mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-layout__tab is-active">Home</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-layout__tab">Tutorials</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-layout__tab">Articles</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-layout__tab">Resources</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-layout__tab">Tools</a>
+
+            </div>
+        </header>
+        <div class="mdl-layout__drawer ">
+            <span class="mdl-layout-title">{{ site.title }}</span>
+            <nav class="mdl-navigation">
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-navigation__link">Home</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-navigation__link">Tutorials</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-navigation__link">Articles</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-navigation__link">Resources</a>
+                <a href="{{ "/courses/" | prepend: site.baseurl }}" class="mdl-navigation__link">Tools</a>
+            </nav>
+        </div>

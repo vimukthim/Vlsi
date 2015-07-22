@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: pagepost
 title: HTML Introduction
+collectionname: html
 ---
 
 #HTML Introduction

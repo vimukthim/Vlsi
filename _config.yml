@@ -16,16 +16,25 @@ markdown: kramdown
 collections:
   html:
     output: true
-    permalink: /html/:path/
+    permalink: courses/html/:path/
+    intro: "Dolore ex deserunt aute fugiat  elit cillum esse."
+
   Java:
     output: true
-    permalink: /Java/:path/    
+    permalink: courses/Java/:path/    
+    intro: "Dolore ex deserunt aute fugiat  elit cillum esse."
+
   Js:
     output: true
-    permalink: /Js/:path/
+    permalink: courses/Js/:path/
+    intro: "Dolore ex deserunt aute fugiat  elit cillum esse."
+
   Php:
     output: true
-    permalink: /Php/:path/
+    permalink: courses/Php/:path/
+    intro: "Dolore ex deserunt aute fugiat  elit cillum esse."
+    
   Python:
     output: true
-    permalink: /Python/:path/
+    permalink: courses/Python/:path/
+    intro: "Dolore ex deserunt aute fugiat  elit cillum esse."

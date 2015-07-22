@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: pagepost
 title: JAVA Introduction
+collectionname: Java
 ---
 
 #JAVA  Introduction

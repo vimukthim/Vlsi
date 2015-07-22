@@ -1,0 +1,140 @@
+---
+layout: default
+---
+
+
+
+ <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+
+{% include headerpost.html %}
+
+       <!-- Header.html-->
+
+
+
+
+
+        <div class="demo-ribbon"></div>
+
+
+
+
+        <main class="demo-main mdl-layout__content">
+
+
+            <div class="demo-container mdl-grid">
+
+
+
+                <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+
+
+                <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+
+                    
+
+                    <div class="demo-crumbs mdl-color-text--grey-500">
+                       <p>{{ page.url | replace: '/', ' > ' | remove_first: '>' }}</p> 
+                      
+
+
+                    </div>
+                     <div class="section--center mdl-grid mdl-typography--text-center mdl-typography--text-uppercase">
+                     <h1>  {{ page.collectionname }}</h1>
+                     </div>
+
+                 <!-- Path.html -->
+
+
+                        {{ content }}
+
+                    <!-- Content -->
+
+                    <p>
+                      
+                      
+
+                    </p>
+
+                   <!-- Menu.html -->
+                   
+
+
+<div class="demo-container mdl-grid mdl-color--grey-800">
+                        
+                        <div class=" mdl-color--grey-800  content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col navigation">
+                           
+                       
+                        
+
+                    {% assign  collection_name = page.collectionname %}
+
+                      {% case collection_name %}
+                        {% when 'html' %}
+                            {% assign collection_array = site.html %}
+                        {% when 'Php' %}
+                            {% assign collection_array = site.Php %}
+                        {% when 'Python' %}
+                            {% assign collection_array = site.Python %}
+                        {% when 'Js' %}
+                            {% assign collection_array = site.Js %}
+                        {% when 'Java' %}
+                            {% assign collection_array = site.Java %}
+                        {% else %}
+                            {% assign collection_array = '' %}
+                      {% endcase %}
+  
+
+
+
+
+                        <h4  class=" content mdl-color-text--white " > {{ collection_name | upcase}} </h4>
+                            <ol class=" content mdl-color-text--white ">
+                                
+                                {% for articles in collection_array %}
+
+                                {% if page.title == articles.title %}
+                                 <li title="" class=" active-link " ><a href="{{ articles.url | prepend: site.baseurl}}">{{ articles.title }}</a>
+                                </li>
+                                {% else %}
+                                 <li title="" class=" " ><a href="{{ articles.url | prepend: site.baseurl }}">{{ articles.title }}</a>
+                                </li>
+                                {% endif %}
+
+                                
+
+                                {% endfor %}
+                               
+                            </ol>
+
+
+                        </div>
+                        
+
+
+                    </div>
+
+
+                </div>
+
+
+
+
+
+            </div>
+
+ 
+
+{% include footer.html %}
+
+
+           <!-- Footer.html-->
+
+
+        </main>
+
+
+
+
+
+    </div>
