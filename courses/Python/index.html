@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+
+<body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+      <!-- Header.html-->
+      {% include header.html %}
+
+
+
+        <main class="mdl-layout__content">
+
+            <div class="mdl-layout__tab-panel is-active" id="overview">
+
+
+                <section class="section--center mdl-grid ">
+                <div class="mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                <h1>Python</h1>
+
+                <div class="divline "><span class="divline divline-icon"></span></div>
+
+                    <p> Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.</p>
+                    </div>
+                    
+                </section>
+
+
+                <section class="section--center mdl-grid mdl-cell--middle ">
+
+
+                <div class="mdl-card mdl-cell mdl-cell--middle mdl-cell--2-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone  invisible"></div>
+
+                 <div class="mdl-card mdl-cell mdl-cell--middle mdl-cell--8-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone mdl-shadow--2dp">
+                        <div class="mdl-card__supporting-text">
+
+                       
+                            <h2>Python</h2> 
+                           <p> Dolore ex deserunt aute fugiat aute nulla ea sunt aliqua nisi cupidatat eu. Nostrud in laboris labore nisi amet do dolor eu fugiat consectetur elit cillum esse.</p>
+                       
+                        
+                        </div>
+
+                        <section  class="section--center mdl-grid mdl-card__actions mdl-cell--middle ">
+
+                        
+
+                            <div class=" mdl-card-list mdl-cell--middle mdl-cell--12-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+                         {% for list in site.Python %}
+
+                             <a href="{{ list.url | prepend: site.baseurl }}">
+
+                             <p> {{ list.title }}</p> </a>   
+    
+
+                        {% endfor %}
+
+                            </div>
+
+                       
+
+                        </section>
+                        
+                    </div>
+
+                  <div class="mdl-card mdl-cell mdl-cell--middle mdl-cell--2-col-desktop mdl-cell--hide-tablet mdl-cell--hide-phone  invisible"></div>
+
+                </section>
+
+<div class="mdl-layout-spacer mdl-grid"></div>
+
+
+
+            </div>
+                {% include footer.html %}
+           <!-- Footer.html-->
+        </main>
+    </div>
+
+  

@@ -4,9 +4,9 @@ layout: default
 
 
 
- <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+ <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-color--grey-100">
 
-{% include headerpost.html %}
+{% include header.html %}
 
        <!-- Header.html-->
 
@@ -40,7 +40,7 @@ layout: default
 
                     </div>
                      <div class="section--center mdl-grid mdl-typography--text-center mdl-typography--text-uppercase">
-                     <h1>  {{ page.collectionname }}</h1>
+                    <a href="{{site.baseurl}}/courses/{{ page.collectionname }}"> <h1>  {{ page.collectionname }}</h1> </a>
                      </div>
 
                  <!-- Path.html -->

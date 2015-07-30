@@ -1,4 +1,4 @@
-<div class="android-header mdl-layout__header mdl-layout__header--waterfall">
+<div class="android-header mdl-layout__header mdl-layout--fixed-header">
         <div class="mdl-layout__header-row">
           
 
@@ -11,10 +11,10 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">About</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Catalog</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">What's New</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}/">About</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ "/courses" | prepend: site.baseurl }}/">Catalog</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}/">What's New</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}/">Contact</a>
               
             </nav>
           </div>
@@ -30,10 +30,10 @@
          <h3><a  href="{{ site.baseurl }}/">{{ site.title }}</a></h3>
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">About</a>
-          <a class="mdl-navigation__link" href="">Catalog</a>
-          <a class="mdl-navigation__link" href="">What's New</a>
-          <a class="mdl-navigation__link" href="">Contact</a>
+          <a class="mdl-navigation__link" href="{{ site.baseurl }}/">About</a>
+          <a class="mdl-navigation__link" href="{{ "/courses" | prepend: site.baseurl }}/">Catalog</a>
+          <a class="mdl-navigation__link" href="{{ site.baseurl }}/">What's New</a>
+          <a class="mdl-navigation__link" href="{{ site.baseurl }}/">Contact</a>
           
         
         </nav>

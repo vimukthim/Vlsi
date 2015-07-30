@@ -4,10 +4,11 @@ layout: default
 
 
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
       <!-- Header.html-->
-      {% include headercollection.html%}
+      {% include header.html %}
 
 
 
@@ -43,7 +44,8 @@ layout: default
                         <div class="mdl-card__supporting-text">
 
 
-                            <h2 > {{ course.label }} </h2>                    
+                            <a href="{{ site.baseurl }}/courses/{{course.label}}"><h2 > {{ course.label }} </h2>          
+                            </a>          
                            <p>{{ course.intro }}</p>
 
 
